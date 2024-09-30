@@ -8,19 +8,16 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Selenium -->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
-        <version>4.13.0</version> <!-- Use the latest version -->
+        <version>4.13.0</version> 
     </dependency>
-    <!-- WebDriver Manager (for managing browser drivers) -->
     <dependency>
         <groupId>io.github.bonigarcia</groupId>
         <artifactId>webdrivermanager</artifactId>
         <version>5.9.0</version>
     </dependency>
-    <!-- TestNG -->
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>

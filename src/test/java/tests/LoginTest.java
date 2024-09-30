@@ -20,8 +20,6 @@ public class LoginTest extends BasePage {
 
     @Test
     public void loginTest() {
-        // Add Login functionality here with Page Object
-        // Assume loginPage.login(user, password);
         Assert.assertTrue(driver.getTitle().contains("Account"), "Login should be successful.");
     }
     @Test

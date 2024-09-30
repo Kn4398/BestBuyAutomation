@@ -8,7 +8,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BasePage {
     public WebDriver driver;
 
-    // Method to initialize browser
     public WebDriver initializeDriver(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
@@ -21,7 +20,6 @@ public class BasePage {
         return driver;
     }
 
-    // Method to close the browser
     public void closeBrowser() {
         if (driver != null) {
             driver.quit();
