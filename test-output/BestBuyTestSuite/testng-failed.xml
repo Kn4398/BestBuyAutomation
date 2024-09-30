@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [BestBuyTestSuite]" parallel="tests">
+  <test name="FirefoxTests(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="searchProductTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- FirefoxTests(failed) -->
+  <test name="ChromeTests(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="searchProductTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [BestBuyTestSuite] -->
